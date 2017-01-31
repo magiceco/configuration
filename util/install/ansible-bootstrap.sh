@@ -163,6 +163,7 @@ if [[ "true" == "${RUN_ANSIBLE}" ]]; then
     git clone ${CONFIGURATION_REPO} ${CONFIGURATION_DIR}
     cd ${CONFIGURATION_DIR}
     git checkout ${CONFIGURATION_VERSION}
+    pip install pyyaml pathlib2
     make requirements
 
     cd "${CONFIGURATION_DIR}"/playbooks/edx-east
