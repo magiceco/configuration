@@ -35,6 +35,8 @@ sudo apt-get install -y build-essential software-properties-common curl git-core
 sudo pip install --upgrade pip==8.1.2
 sudo pip install --upgrade setuptools==24.0.3
 sudo -H pip install --upgrade virtualenv==15.0.2
+sudo pip install 'django==1.4.21'
+sudo pip install django-user-tasks
 
 ##
 ## Update alternatives so that gcc/g++ 4.8 is the default compiler
